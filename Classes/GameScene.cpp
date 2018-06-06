@@ -98,9 +98,9 @@ bool GameScene::initBackGround(){
 Poker* GameScene::selectPoker(int huaSe,int num){
 	Poker* pk;
 	if(huaSe != Gui)
-		pk = Poker::create("poker.png",Rect(num*pkWidth,huaSe*pkHeight,pkWidth,pkHeight));
+		pk = Poker::create("puke.png",Rect(num*pkWidth,huaSe*pkHeight,pkWidth,pkHeight));
 	else
-		pk = Poker::create("poker.png",Rect((num-XiaoGui)*pkWidth,huaSe*pkHeight,pkWidth,pkHeight));
+		pk = Poker::create("puke.png",Rect((num-XiaoGui)*pkWidth,huaSe*pkHeight,pkWidth,pkHeight));
 	pk->setHuaSe(huaSe); //设置花色
 	pk->setNum(num);//设置牌值
 	pk->setGameMain(this);
