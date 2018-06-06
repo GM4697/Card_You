@@ -72,9 +72,9 @@ void Poker::showLast(){
 Poker* Poker::copy(){
 	Poker* pk;
 	if(m_huaSe != Gui)
-		pk = Poker::create("poker.png",Rect(this->m_num*pkWidth,this->m_huaSe*pkHeight,pkWidth,pkHeight));
+		pk = Poker::create("puke.png",Rect(this->m_num*pkWidth,this->m_huaSe*pkHeight,pkWidth,pkHeight));
 	else
-		pk = Poker::create("poker.png",Rect((this->m_num-XiaoGui)*pkWidth,this->m_huaSe*pkHeight,pkWidth,pkHeight));
+		pk = Poker::create("puke.png",Rect((this->m_num-XiaoGui)*pkWidth,this->m_huaSe*pkHeight,pkWidth,pkHeight));
 	pk->m_isDianJi = this->m_isDianJi;
 	pk->m_isSelect = this->m_isSelect;
 	pk->setHuaSe(this->getHuaSe());
